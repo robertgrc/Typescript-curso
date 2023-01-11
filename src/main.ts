@@ -16,6 +16,9 @@ import { nombreCompleto } from './Funciones/ParametroRest'
 import { myFunction } from './Funciones/TypeFunction'
 import { contar, llamarBatman, sumarDosNum, superHeroes, unirheroes } from './Funciones/TareaFunciones'
 import { flashName } from './objetos/objects'
+import { supermanName } from './objetos/tipoPersonalizado'
+import { myCustomVariable } from './objetos/MultiplesObjetosPermitidos'
+import { batimovil, bumblebee } from './objetos/tareaObjetos'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -24,8 +27,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
+    <h1>Tarea Objetos</h1>
+    <h2>${batimovil}</h2>
+    <h2>${bumblebee}</h2>
+    <h2>${myCustomVariable}</h2>
     <hr/>
     <h2>${flashName}</h2>
+    <h2>${supermanName}</h2>
     <hr/>
     <h2>${unirheroes("julio","juan", "reico")}</h2>
     <hr/>

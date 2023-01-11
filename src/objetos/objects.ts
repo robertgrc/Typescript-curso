@@ -1,4 +1,4 @@
-
+//
 export let flashName:{name:string, age?:number, powers:string[], getNombre?:()=>string}={
     name:"Barry Allen",
     age: 24,

@@ -21,4 +21,3 @@ export let supermanName: Hero ={
     }
 }
 
-console.log({supermanName})
