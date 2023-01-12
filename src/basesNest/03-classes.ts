@@ -1,4 +1,4 @@
-
+import axios from "axios"
 
 
 export class Pokemon{
@@ -21,10 +21,18 @@ export class Pokemon{
         console.log(`${this.name} ${this.name} `)
     }
 
+    async getMoves(){
+        
+        const {data} = await axios.get("https://pokeapi.co/api/v2/pokemon/4")
+        console.log(data.moves)
+        return data.moves;
+    }
+
 }
 export const Ngolo = new Pokemon(7, "Ngolo")
 
-console.log(Ngolo);
-
-Ngolo.convertToUpperCase()
-Ngolo.duplicate()
+// console.log(Ngolo);
+// Ngolo.convertToUpperCase()
+// Ngolo.duplicate()
+//console.log(Ngolo.getMoves())
+Ngolo.getMoves();
