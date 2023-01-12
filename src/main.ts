@@ -1,7 +1,6 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
-
 import {name} from "./bases/01-types"
 import {callBatman} from "./bases/002-void"
 import {numbers, villians, currentAudio} from "./bases/001-arrays"
@@ -19,7 +18,8 @@ import { flashName } from './objetos/objects'
 import { supermanName } from './objetos/tipoPersonalizado'
 import { myCustomVariable } from './objetos/MultiplesObjetosPermitidos'
 import { batimovil, bumblebee } from './objetos/tareaObjetos'
-import { avengers, printAvenger } from './ES6/desestructuracionTS'
+import { avengers, capitanazo, ironman, printAvenger } from './ES6/desestructuracionTS'
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -28,6 +28,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
+    <hr/>
+    <h2>${capitanazo}</h2>
+    <hr/>
     <h2>${printAvenger(avengers)}</h2>
     <hr/>
     <h2>${avengers}</h2>

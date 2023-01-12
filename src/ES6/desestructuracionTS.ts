@@ -25,3 +25,14 @@ export const printAvenger = ({ironman, nick, ...resto}:Avengers)=>{
 }
 
 printAvenger(avengers)
+
+//desestructuracion arreglos
+
+export const avengersArreglo:string[]=["cap.America","Ironman","Hulk"];
+
+//export const ironman= avengersArreglo[1]
+export const [capitanazo, ironman, hombreverde]= avengersArreglo
+console.log(ironman, capitanazo,hombreverde)
+
+
+
