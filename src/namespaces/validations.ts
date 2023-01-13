@@ -1,3 +1,6 @@
+//import { Hero as SuperHero, Hero2, Hero3, Hero4 } from "./Hero";
+import * as HeroClases from "./Hero"
+
 
 export const number=9
 
@@ -16,3 +19,12 @@ namespace Validations{
 }
 
 console.log(Validations.validateText("julio"))
+
+//Exports
+
+// export const Hero= 123;
+// export const ironman = new SuperHero("Ironman",1,55)
+// console.log(ironman)
+
+const ironman = new HeroClases.Hero("Ironman",1,55)
+console.log(ironman)

@@ -1,13 +1,17 @@
+import { genericFunction, printObjet } from './genericsTypescript/generics'
 import './style.css'
-import { setupCounter } from './counter'
-import { number } from './namespaces/validations'
-
-
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>${number}</h1>
+    <h1>${printObjet(123123)}</h1>
+    <h1>${printObjet(new Date())}</h1>
+    <h1>${printObjet({a:1, b:2, c:3})}</h1>
+    <h1>${printObjet([1,2,3,4,5,6,7])}</h1>
+    <hr>
+    <h1>${genericFunction(3.1416).toFixed(2)}</h1>
+    
+
+
   </div>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// <h1>${genericFunction('hola mundo').toFixed(2)}</h1>
