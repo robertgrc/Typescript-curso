@@ -1,11 +1,12 @@
 import './style.css'
 import { setupCounter } from './counter'
-import { magneto, wolverine } from './bases/clases/abstract'
+import { wolverine } from './bases/clases/private-constructor'
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>${wolverine.name} ${magneto.name}</h1>
+    <h1>${wolverine}</h1>
   </div>
 `
 
