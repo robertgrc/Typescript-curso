@@ -17,10 +17,10 @@ export const genericFunctionArrow = <T>(argument:T)=> argument
 
 
 //Hacer estas lineas de codigo en otra pagina y exportar las funciones genericas
-export const name: string="Robert"
-export const apellido: string="Rodriguez"
+// export const name: string="Robert"
+// export const apellido: string="Rodriguez"
 
-console.log( genericFunction(3.171618).toFixed(2))
-console.log( genericFunction(name).toUpperCase())
-console.log( genericFunctionArrow(apellido).toUpperCase())
-console.log( genericFunctionArrow(new Date()).getDate())
+// console.log( genericFunction(3.171618).toFixed(2))
+// console.log( genericFunction(name).toUpperCase())
+// console.log( genericFunctionArrow(apellido).toUpperCase())
+// console.log( genericFunctionArrow(new Date()).getDate())
