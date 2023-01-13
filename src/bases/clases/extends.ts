@@ -1,3 +1,4 @@
+import { fullName } from '../Funciones/ParametrosFunciones';
 
 export class Avenger{
     constructor(
@@ -21,13 +22,26 @@ export class Xmen extends Avenger{
         console.log("Constructor Xmen llamado")
     }
 
-    getFullNameDesdeXmen(){
+    get fullName(){
+        return `${this.name}-${this.realName}`
+    }
 
+    set fullName(name:string){
+
+        if(name.length<3){
+            throw new Error("El nombre debe ser mayor de 3 letras")
+        }
+
+        this.name = name
+    }
+
+    getFullNameDesdeXmen(){
+        console.log(super.getFullname())
     }
 
 }
 
 export const wolverine = new Xmen("wolverine","Logan", true)
-console.log(wolverine)
+wolverine.fullName = "Robert"
+console.log(wolverine.fullName)
 
-wolverine.getFullNameDesdeXmen();
