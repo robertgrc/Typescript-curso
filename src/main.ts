@@ -1,13 +1,12 @@
 import './style.css'
 import { setupCounter } from './counter'
-import { flashName } from './interfacesTypescript/basicas'
-import { client } from './interfacesTypescript/complejas'
+import { number } from './namespaces/validations'
 
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>${client.name}</h1>
+    <h1>${number}</h1>
   </div>
 `
 
