@@ -5,6 +5,7 @@ interface Client {
     name: string;
     age?: number;
     address: Address
+    
 }
 
 interface Address{
@@ -20,7 +21,8 @@ export const client:Client = {
         id:125,
         zip:"KY2 SUD",
         city:"Ottawa"
-    }
+    },
+   
 }
 
 export const client2: Client ={
@@ -31,7 +33,8 @@ export const client2: Client ={
         zip:"cowabunga",
         city:"republica"
 
-    }
+    },
+   
 }
 
 console.log({client})
