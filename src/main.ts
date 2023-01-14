@@ -1,13 +1,13 @@
-import { deadpool } from './genericsTypescript/funcionGenerica'
-import { genericFunction, printObjet } from './genericsTypescript/generics'
+
+
+import { getPokemon } from './pokemonGenericos/get-pokemon'
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>${console.log(deadpool.dangerLevel)}</h1>
-   
+    <h1>${console.log(getPokemon(14))}</h1>
     
-
+   
 
   </div>
 `
